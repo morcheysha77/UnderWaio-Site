@@ -1,0 +1,48 @@
+{% extends "base.twig" %}
+
+{% block title "UnderWaio" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/stylesheets/base.css">
+{% endblock %}
+
+{% block body %}
+
+    <!--
+        loading Page
+    -->
+    <div id="loader">
+        <div class="text_load">
+
+            <p>C</p>
+            <p>h</p>
+            <p>a</p>
+            <p>r</p>
+            <p>g</p>
+            <p>m</p>
+            <p>e</p>
+            <p>n</p>
+            <p>t</p>
+            <p class="load_1">.</p>
+            <p class="load_2">.</p>
+            <p class="load_3">.</p>
+
+        </div>
+
+        <p id="wait">Attendez la fin du chargement</p>
+
+    </div>
+
+    {% include "../compenents/navbar.twig" %}
+
+    <div class="header">
+    </div>
+
+    <div class="content">
+    </div>
+
+    <div class="footer">
+        <p class="footer_text">Tous droits réservés. UnderWaio © 2020</p>
+        <a href="https://discord.gg/2A5wuMg"><img src="/images/discord_1.png" class="footer_img"></a>
+    </div>
+{% endblock %}

@@ -1,0 +1,43 @@
+@import "color";
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+body {
+    font-family: "Arvo";
+
+    height: 100vh;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+
+    background-image: url("../images/login.png");
+    background-size: 1750px;
+}
+
+.login {
+
+    border: 0.7px solid $color-black;
+    background-color: $color-white;
+    background-size: 4000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#login_text {
+
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+
+}
+
+#login_buttom {
+
+    display: flex;
+    justify-content: center;
+
+}

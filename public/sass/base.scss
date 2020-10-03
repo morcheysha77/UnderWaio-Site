@@ -1,0 +1,38 @@
+@import "loader";
+
+@import "color";
+
+@import "nav";
+
+@import "footer";
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+body {
+
+    font-family: "Arvo";
+
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-rows: 5vh 95vh 1fr 120px;
+}
+
+.header {
+  grid-row: 2;
+  background-color: $color-orange;
+}
+
+.content {
+  grid-row: 3;
+  background-color: $color-white;
+}
+
+.footer {
+  grid-row: 4;
+  background-color: $color-black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

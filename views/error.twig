@@ -1,0 +1,14 @@
+{% extends "base.twig" %}
+
+{% block title "Error 404" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/stylesheets/error404.css">
+{% endblock %}
+
+{% block body %}
+    <img src="/images/page_not_found.svg">
+
+    <p id="first-text">La page n'a pas réussi à être trouvé</p>
+    <a id="second-text" href="/">Retourner à la page d'acceuil</a>
+{% endblock %}

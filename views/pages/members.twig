@@ -1,0 +1,71 @@
+{% extends "base.twig" %}
+
+{% block title "UnderWaio" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/stylesheets/members.css">
+{% endblock %}
+
+{% block body %}
+
+    {% include "../compenents/navbar.twig" %}
+
+    <div class="header">
+
+        <div class="rank">
+
+            <h1 class="title">📬uprank-unrank📬</h1>
+
+            <div id="old">
+
+                <p class="new">{{ Message_5 }}</p>
+                <p class="old">{{ Message_4 }}</p>
+                <p class="old">{{ Message_3 }}</p>
+                <p class="old">{{ Message_2 }}</p>
+                <p class="old">{{ Message_1 }}</p>
+
+            </div>
+
+        </div>
+
+        <div class="memberslisttitle"><h1>Membres</h1></div>
+        <table class="memberslist">
+          
+            <tr>
+              <th>Grades</th>
+              <th>Membres</th>
+            </tr>
+          
+            <tr>
+              <td>「Leader」</td>
+              <td>{{ Leaders }}</td>
+            </tr>
+
+            <tr>
+                <td>╠UW╣ | Chefs-Officiers'🍀</td>
+                <td>{{ ChefOfficiers }}</td>
+            </tr>
+
+            <tr>
+                <td>╠UW╣ | Officiers</td>
+                <td>{{ Officiers }}</td>
+            </tr>
+
+            <tr>
+                <td>╠UW╣ | Membres</td>
+                <td>{{ Members }}</td>
+            </tr>
+
+            <tr>
+                <td>╠UW╣ | Membres NG🍀</td>
+                <td>{{ MembersNG }}</td>
+            </tr>
+
+          </table>
+
+    </div>
+
+    <div class="footer">
+        <p class="footer_text">Tous droits réservés. UnderWaio © 2020</p>
+    </div>
+{% endblock %}

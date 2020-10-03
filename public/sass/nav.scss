@@ -1,0 +1,51 @@
+@import "color";
+
+nav {
+    z-index: 1;
+    grid-row: 1;
+  
+    position: fixed;
+    top: 0;
+    width: 100%;
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+    background-color: $color-grey;
+    
+}
+  
+nav h1 {
+    grid-column: 1;
+  
+    display: flex;
+    justify-content: center;
+    
+    color: $color-white;
+  
+}
+  
+nav ul {
+    grid-column: 2;
+  
+    list-style-type: none;
+  
+    display: flex;
+}
+  
+nav ul li {
+    margin-right: 50px;
+  
+    display: flex;
+  
+    align-items: center;
+}
+  
+nav a {
+    text-decoration: none;
+    color: $color-white;
+}
+  
+nav a:hover {
+    color: $color-orange;
+}

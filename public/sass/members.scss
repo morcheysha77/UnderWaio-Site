@@ -1,0 +1,144 @@
+@import "color";
+
+@import "nav";
+
+@import "footer";
+
+@font-face {
+    font-family: 'SawarabiMincho-Regular';
+    src: url('/fonts/SawarabiMincho-Regular.ttf');
+        
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+
+    display: grid;
+
+    grid-template-rows: 5vh 1fr 120px;
+
+    flex-direction: column;
+
+    font-family: 'SawarabiMincho-Regular';
+
+}
+
+.memberslist {
+
+    display: flex;
+
+    border-collapse: collapse;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+.memberslisttitle h1{
+
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 100px;
+    padding: 5px;
+    color: $color-white;
+}
+
+.memberslist td{
+
+    
+    border: 3px solid $color-white;
+    width: 50%;
+    color: $color-white;
+    padding: 10px;
+}
+
+.memberslist th{
+
+    border: 3px solid $color-white;
+    width: 50%;
+    color: $color-black;
+    padding: 10px;
+}
+
+.rank {
+  
+    display: grid;
+    grid-template-rows: 35% 45%;
+    
+}
+  
+.rank h1 {
+  
+    display: grid;
+
+    margin-top: 150px;
+  
+    align-items: center;
+    grid-row: 1;
+
+    bottom: 70px;
+    text-align: center;
+    color: $color-white;
+  
+}
+
+.rank #old .new{
+  
+    display: grid;
+    display: flex;
+
+    margin-top: 35px;
+    padding: 5px;
+    font-size: 20px;
+  
+    align-items: center;
+    grid-row: 2;
+
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+    color: $color-white;
+  
+}
+
+.rank #old .old{
+  
+    display: grid;
+    display: flex;
+
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+  
+    align-items: center;
+    grid-row: 2;
+
+    list-style-type: none;
+    text-decoration: none;
+    justify-content: center;
+
+    flex-direction: column;
+
+    text-align: center;
+    color: $color-white;
+  
+}
+
+.header {
+  grid-row: 2;
+  background-color: $color-orange;
+}
+
+.footer {
+    grid-row: 3;
+    background-color: $color-black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

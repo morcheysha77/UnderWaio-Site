@@ -1,0 +1,33 @@
+@import "color";
+
+@import url("https://fonts.googleapis.com/css2?family=Arvo&display=swap");
+
+body {
+    font-family: "Arvo";
+
+    height: 100vh;
+
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+p, a {
+    margin: 0;
+    color: black;
+
+    margin-top: 30px;
+}
+
+#first-text {
+    font-size: 2.5em;
+}
+
+#second-text {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: violet;
+}

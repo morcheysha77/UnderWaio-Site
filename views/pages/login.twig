@@ -1,0 +1,20 @@
+{% extends "base.twig" %}
+
+{% block title "Login" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="/stylesheets/login.css">
+{% endblock %}
+
+{% block body %}
+    <div class="login">
+
+        <p id="login_text">Connexion</p>
+        <p id="login_email">Nom d'utilisateur</p>
+        <input type="text" placeholder="Email ou Nom d'utilisateur">
+        <p id="password">Mot De Passe</p>
+        <input type="text" placeholder="Mot De Passe">
+        <input type="submit" value="Login" id="login_button">
+
+    </div>
+{% endblock %}
