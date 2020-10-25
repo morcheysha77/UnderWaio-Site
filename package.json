@@ -16,8 +16,5 @@
     "sass": "^1.26.10",
     "sass-folder-converter": "^1.0.3",
     "twig": "^1.15.2"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
   }
 }
